@@ -1,0 +1,91 @@
+/*css da página artigos*/
+
+body::after{
+    content: "";
+    background: linear-gradient(to right, #154205, #487527);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 600px;
+    z-index: -1;
+}
+.container_art{
+    height: auto;
+    
+}
+.art{
+    z-index: 1;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: #fff;
+    height: 95%;
+    border-radius: 8px;
+    box-shadow: 10px 12px 20px 5px rgba(0, 0, 0, 0.2);
+      
+    
+}
+.art h2{
+    padding: 30px;
+    text-align: center;
+}
+.art_header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-btn{
+    background-color: #487527;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.dropdown-content {
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #e8e8e8;
+}
+.sec-art{
+    display: block;
+    
+}
+.arts:nth-child(even){
+    background: #15420544;
+}
+.arts:nth-child(odd){
+    background: #43b31a44;
+
+}
+.arts{
+    margin: 10px 30px 20px;
+    overflow: auto;
+    padding: 10px;
+    transition: 0.2s;
+}
+.arts:hover{
+    background: #154205aa;
+    cursor: pointer;
+}

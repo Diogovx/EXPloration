@@ -1,0 +1,299 @@
+:root{
+    --tamanho-fonte-g: 20px;
+    --fonte:  'Raleway', sans-serif;
+    --tamanho-fonte-p: 15;
+}
+
+
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: 6px;
+}
+p, small{
+    letter-spacing: 5px;
+}
+span{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+li{
+    list-style: none;
+}
+
+.btn{
+    background: #677310;
+    padding: 10px 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+.btn:hover{
+    background: #899532;
+    transition: 0.2s;
+}
+.btn:active{
+    background: #455210;
+    color: #ddd;
+}
+.header{
+    background: url(../img/a.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+
+.header h1{
+    font-size: 60px;
+    
+}
+.header{
+    padding: 14rem 0;
+}
+
+.header p{
+    font-size: 30px;
+}
+
+
+
+.nav {
+    overflow: hidden;
+    background: linear-gradient(to right, #4F8A0C, #8A810C);
+    z-index: 2;
+}
+  
+.nav a {
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+  
+.nav a:hover {
+    background-color: #899532;
+    transition: 0.2s;
+}
+  
+.nav a.active {
+    background-color: #21800B;
+    color: white;
+  }
+.nav a:nth-child(2){
+    margin-left: 40%;
+}
+  
+.nav .icon {
+    display: none;
+}
+  
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+
+.container{
+    margin: auto;
+    max-width: 1600px;
+}
+
+.sec1, .sec2{
+    text-align: center;
+}
+.sec1{
+    padding: 50px 0 50px 0;
+}
+
+.grid-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.card{
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.bg{
+    background: linear-gradient(to right, #154205, #376416) ;
+}
+.sec2{
+    display: flex;
+    color: #fff;
+}
+.esquerda{
+    flex:60%;
+    text-align: left;
+    padding: 20px;
+}
+.direita{
+    flex: 40%;
+    text-align: left;
+    padding: 50px;
+}
+.direita p{
+    padding-bottom: 20px;
+}
+.btn-sec{
+    background: none;
+    padding: 10px 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 1px #aaa ;
+}
+.btn-sec:hover{
+    background: #899532;
+    color: #eee;
+    transition: 0.2s;
+    border: none;
+}
+.btn-sec:active{
+    background: #455210;
+    color: #ddd;
+    border: none;
+}
+.direita a{
+    display: block;
+    color: #ddd;
+    border-bottom: 1px solid #ccc;
+    width: 65%;
+    padding: 10px;
+}
+.direita a:hover{
+    color: #fff;
+}
+
+.sec3{
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+.semicard p{
+    padding-bottom: 20px;
+}
+.semicard img{
+    width: 350px;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #032003, #276406);
+    color: #eee;
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+}
+.footer a{
+    color: #eee;
+    padding: 25px;
+}
+.footer a i{
+    font-size: 30px;
+}
+.ft{
+    display: flex;
+    color: #fff;
+    padding-top: 25px;
+}
+.ft small:first-child{
+    flex: 50%;
+    border-right: 1px solid #999;
+    margin-right: 20px;
+}
+.ft small:last-child{
+    flex: 50%;
+}
+
+.modal{
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.h-modal{
+    display: flex;
+    background: linear-gradient(to right, #4F8A0C, #8A810C);
+    padding: 10px;
+    color: #fff;
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+}
+.h-modal i{
+    margin-left: auto;
+    font-size: 1.5rem;
+}
+.input_i{
+    margin: 20px;
+    padding: 10px;
+    overflow: auto;
+
+}
+.input_i i{
+    padding: 5px 10px;
+}
+.input_i input{
+    border-bottom: 1px #aaa solid;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 90%;
+
+}
+.conteudo{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+}
+
+.conteudo .btn{
+    margin: 10px;
+}
+
+.msg-erro{
+    color: #e00;
+    padding-left: 40px;
+    display: block;
+    margin-top: 10px;
+}
+.em, .sn{
+    display: none;
+}

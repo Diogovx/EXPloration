@@ -1,0 +1,41 @@
+/* CSS da página viagens */
+
+body::after{
+    content: "";
+    background: linear-gradient(to right, #154205, #487527);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 600px;
+    z-index: -1;
+}
+.container_vig{
+    height: auto;
+}
+.vig{
+    z-index: 1;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: #fff;
+    height: 95%;
+    border-radius: 8px;
+    box-shadow: 10px 12px 20px 5px rgba(0, 0, 0, 0.2);
+}
+.vig h2{
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.vig_grid{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.vig_card{
+    height: 600px;
+}
